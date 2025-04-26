@@ -100,8 +100,6 @@ print("✅ Project files created successfully!")
 
 ```
 
-
-
 ---
 
 ## 🛠️ Technologies Used
@@ -125,11 +123,10 @@ Visibility: Private or Public (your choice)
 
 2. Set Up GitLab Container Registry
 Every GitLab project automatically gets a free container registry.
-You can push Docker images like:
-```bash
-registry.gitlab.com/your-username/gitops-nodejs-microservices/user-service:latest
-```
-Push them into GitLab's own registry using $CI_REGISTRY
+You can push Docker images like:  
+registry.gitlab.com/your-username/gitops-nodejs-microservices/user-service:latest  
+
+Push them into GitLab's own registry using $CI_REGISTRY  
 
 3. Configure GitLab CI/CD
 Create a file called .gitlab-ci.yml at the root of your repository.
@@ -140,7 +137,9 @@ Every push to GitLab triggers:
 ```
 ---
 
+
 ## Pro Tip: Use GitLab Environment Variables  
+```plain text
 Go to:  
 GitLab → Project → Settings → CI/CD → Variables  
 Add:  
@@ -148,7 +147,7 @@ Add:
  - CI_REGISTRY_PASSWORD → your GitLab password or CI Job Token (default works)  
  - CI_REGISTRY → automatically set by GitLab 
  - Optional: if using Kubernetes configs, you could store KUBE_CONFIG as well!  
-
+```
 ---
 ---
 
