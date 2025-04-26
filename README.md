@@ -21,7 +21,7 @@ Deploy a multi-service Node.js application using **GitLab CI** for automation an
 
 ## 🧱 Project Structure
 
-```plain test
+```plain text
 gitops-nodejs-microservices/
 ├── microservices/
 │   ├── user-service/
