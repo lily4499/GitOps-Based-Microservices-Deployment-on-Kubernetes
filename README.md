@@ -112,10 +112,10 @@ print("✅ Project files created successfully!")
 - Helm
 
 ---
-
+## How to use GitLab for this project:
 
 ```plain text
-## How to use GitLab for this project:
+
 1. Create a GitLab Repository
 Project Name: gitops-nodejs-microservices
 Visibility: Private or Public (your choice)
